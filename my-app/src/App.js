@@ -33,7 +33,7 @@ export const App = () => {
 						{steps.map((step, index) => (
 							<li
 								key={step.id}
-								className={`${styles['steps-item']} ${index <= activeIndex ? styles.done : ''}`}
+								className={`${styles['steps-item']} ${index <= activeIndex ? styles.done : ''} ${index === activeIndex ? styles.active : ''}`}
 							>
 								<button
 									onClick={() => setActiveIndex(index)}
